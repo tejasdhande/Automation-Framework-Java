@@ -60,7 +60,7 @@ public class IframeActions {
 			
 		} catch (Exception e) {
 			logger.error("Error occured while switching to Default content");
-			ExtentFactory.getInstance().failTest("Error occurred while switching to default content");
+			ExtentFactory.getInstance().failTest("Error occurred while switching to default content ");
 		}
 	}
 }
