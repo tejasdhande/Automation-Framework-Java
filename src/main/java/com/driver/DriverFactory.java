@@ -21,7 +21,7 @@ public class DriverFactory {
 		driver.set(driverObj);
 	}
 	
-	public WebDriver getDriver(WebDriver driverObj) {
+	public WebDriver getDriver() {
 		return driver.get();
 		
 	}
