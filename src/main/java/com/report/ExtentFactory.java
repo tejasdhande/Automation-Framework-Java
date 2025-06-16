@@ -19,7 +19,7 @@ public class ExtentFactory {
 
 	ThreadLocal<ExtentTest> extent = new ThreadLocal<ExtentTest>();
 
-	// Singletone design pattern to create only one object to use thorughout the
+	// Single tone design pattern to create only one object to use thorughout the
 	// project
 
 	private ExtentFactory() {
@@ -87,12 +87,13 @@ public class ExtentFactory {
 		getInstance().getExtentTest()
 				.fail("Error occured while entering value in " + value + " in text box " + elementName);
 	}
-	
+
 	public static void passTest(String msg) {
 		getInstance().getExtentTest().log(Status.PASS, MarkupHelper.createLabel(msg, ExtentColor.GREEN));
 	}
-	
+
 	public static void failTest(String msg) {
-		getInstance().getExtentTest().fail(msg, MediaEntityBuilder.createScreenCaptureFromBase64String(captureApplicationScreenshot()).build());
+		getInstance().getExtentTest().fail(msg,
+				MediaEntityBuilder.createScreenCaptureFromBase64String(captureApplicationScreenshot()).build());
 	}
 }
