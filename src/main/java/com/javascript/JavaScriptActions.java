@@ -41,5 +41,35 @@ public class JavaScriptActions {
 			ExtentFactory.getInstance().failTest("Exception is occured while entering value using javascript");
 		}
 	}
+	
+	public void scrollPageToViewElement(WebElement element) {
+		try {
+			JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getInstace().getDriver();  // typecast
+			js.executeScript("arguments[0].scrollIntoView(true)", element);
+			
+			logger.info("Element is visible on screen");
+			ExtentFactory.getInstance().passTest("Element is visible on screen");	
+			
+		} catch (Exception e) {
+
+			logger.error("Exception is occured while scrolling the page" +e.getMessage());
+			ExtentFactory.getInstance().failTest("Exception is occured while scrolling the page");
+		}
+	}
+	
+	public void scrollTillEndOfPage() {
+		try {
+			JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getInstace().getDriver();  // typecast
+			js.executeScript("window.scrollTO(0, document.body.scrollHeight)");
+			
+			logger.info("Page is scrolled till end");
+			ExtentFactory.getInstance().passTest("Page is scrolled till end") ;	
+			
+		} catch (Exception e) {
+
+			logger.error("Exception is occured while scrolling the till page" +e.getMessage());
+			ExtentFactory.getInstance().failTest("Exception is occured while scrolling the till page");
+		}
+	}
 
 }
