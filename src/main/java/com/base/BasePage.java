@@ -48,4 +48,23 @@ public class BasePage {
 
 		ExtentFactory.getInstance().passTest(value + " is entered in " + elementName);
 	}
+	
+	public boolean isElementSelected(WebElement element, String elementName) {
+		
+		explicitWaitActions.waitForElementToBePresent(element, elementName);
+		return element.isSelected();
+		
+		
+	}
+	
+	public void selectCheckbox(WebElement element, String elementName) {
+		
+		if(this.isElementSelected(element, elementName) == false) {
+			 this.click(element, elementName);
+		}
+		else {
+			ExtentFactory.getInstance().failTest(elementName+" is already selected");
+		}
+		
+	}
 }
