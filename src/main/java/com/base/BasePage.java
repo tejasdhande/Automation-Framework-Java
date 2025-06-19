@@ -40,4 +40,12 @@ public class BasePage {
 
 	}
 
+	public void sendKeys(WebElement element, String elementName, String value) {
+
+		explicitWaitActions.waitForElementToBePresent(element, elementName);
+		element.clear();
+		element.sendKeys(value);
+
+		ExtentFactory.getInstance().passTest(value + " is entered in " + elementName);
+	}
 }
