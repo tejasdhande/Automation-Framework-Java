@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BrowserFactory {
 
-	public WebDriver createBrowserInstance(String browserName) {
+	public static WebDriver createBrowserInstance(String browserName) {
 		
 		WebDriver driver = null;
 		
