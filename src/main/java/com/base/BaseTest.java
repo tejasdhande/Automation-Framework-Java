@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeSuite;
 import com.driver.BrowserFactory;
 import com.driver.DriverFactory;
 import com.properties.ConfigLoader;
+import com.properties.TestDataLoader;
 
 public class BaseTest {
 
@@ -16,6 +17,8 @@ public class BaseTest {
 		WebDriver driver = BrowserFactory.createBrowserInstance(ConfigLoader.getInstance().getPropertyValue("browser"));
 
 		DriverFactory.getInstace().setDriver(driver);
+		
+		DriverFactory.getInstace().getDriver().get(TestDataLoader.getInstance().getAppURL());
 
 	}
 	
