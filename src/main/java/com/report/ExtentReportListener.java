@@ -32,12 +32,12 @@ public class ExtentReportListener implements ITestListener{
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		ExtentFactory.getInstance().getExtentTest().fail("Exceptions Details "+result.getThrowable().getMessage())
+		ExtentFactory.getInstance().getExtentTest().fail("Exceptions Details "+result.getThrowable().getMessage());
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		ExtentFactory.getInstance().getExtentTest().log(Status.SKIP, "test case" + result.getName()+ "is skipped")
+		ExtentFactory.getInstance().getExtentTest().log(Status.SKIP, "test case" + result.getName()+ "is skipped");
 	}
 
 	@Override
