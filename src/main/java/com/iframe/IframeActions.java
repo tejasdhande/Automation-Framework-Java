@@ -18,7 +18,7 @@ public class IframeActions {
 	public void waitForIframeAndSwitch(String idOrName) {
 
 		try {
-			WebDriverWait wait = new WebDriverWait(DriverFactory.getInstace().getDriver(),
+			WebDriverWait wait = new WebDriverWait(DriverFactory.getInstance().getDriver(),
 					Duration.ofSeconds(Constants.EXPLICIT_WAIT_TIME));
 
 			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(idOrName));
@@ -36,7 +36,7 @@ public class IframeActions {
 	public void waitForIframeAndSwitch(int index) {
 
 		try {
-			WebDriverWait wait = new WebDriverWait(DriverFactory.getInstace().getDriver(),
+			WebDriverWait wait = new WebDriverWait(DriverFactory.getInstance().getDriver(),
 					Duration.ofSeconds(Constants.EXPLICIT_WAIT_TIME));
 
 			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(index));
@@ -54,7 +54,7 @@ public class IframeActions {
 	public void switchBackToDefaultContent() {
 
 		try {
-			DriverFactory.getInstace().getDriver().switchTo().defaultContent();
+			DriverFactory.getInstance().getDriver().switchTo().defaultContent();
 			logger.info("Switched to Default Content");
 			ExtentFactory.getInstance().passTest("Switched to Default Content");
 

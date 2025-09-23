@@ -17,7 +17,7 @@ public class AlertActions {
 	public void switchToAlert() {
 
 		try {
-			alert = DriverFactory.getInstace().getDriver().switchTo().alert();
+			alert = DriverFactory.getInstance().getDriver().switchTo().alert();
 			logger.info("Switched to alert");
 			ExtentFactory.getInstance().passTest("Switched to alert"); // for report html
 

@@ -21,7 +21,7 @@ public class LoginPage extends BasePage {
 	
 	public LoginPage() {
 		
-		PageFactory.initElements(DriverFactory.getInstace().getDriver(), this);
+		PageFactory.initElements(DriverFactory.getInstance().getDriver(), this);
 	}
 	
 	public void loginToApplication(String userNameValue, String passwordValue) {

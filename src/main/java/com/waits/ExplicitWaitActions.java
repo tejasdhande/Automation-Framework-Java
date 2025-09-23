@@ -19,7 +19,7 @@ public class ExplicitWaitActions {
 	public void waitForElementToBePresent(WebElement element, String elementName) {
 
 		try {
-			WebDriverWait wait = new WebDriverWait(DriverFactory.getInstace().getDriver(),
+			WebDriverWait wait = new WebDriverWait(DriverFactory.getInstance().getDriver(),
 					Duration.ofSeconds(Constants.EXPLICIT_WAIT_TIME));
 
 			wait.until(ExpectedConditions.visibilityOf(element));
@@ -36,7 +36,7 @@ public class ExplicitWaitActions {
 	public void waitForElementToBeClickable(WebElement element, String elementName) {
 
 		try {
-			WebDriverWait wait = new WebDriverWait(DriverFactory.getInstace().getDriver(),
+			WebDriverWait wait = new WebDriverWait(DriverFactory.getInstance().getDriver(),
 					Duration.ofSeconds(Constants.EXPLICIT_WAIT_TIME));
 
 			wait.until(ExpectedConditions.elementToBeClickable(element));

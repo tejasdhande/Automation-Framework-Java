@@ -14,7 +14,7 @@ public class JavaScriptActions {
 	
 	public void click(WebElement element) {
 		try {
-			JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getInstace().getDriver();  // typecast
+			JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getInstance().getDriver();  // typecast
 			js.executeScript("arguments[0].click()", element);
 			
 			logger.info("Element is clicked");
@@ -29,7 +29,7 @@ public class JavaScriptActions {
 	
 	public void sendKeys(WebElement element, String value) {
 		try {
-			JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getInstace().getDriver();  // typecast
+			JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getInstance().getDriver();  // typecast
 			js.executeScript("arguments[0].value = " + " ' " + value + "'", element);
 			
 			logger.info(value + "is entered using javascript");
@@ -44,7 +44,7 @@ public class JavaScriptActions {
 	
 	public void scrollPageToViewElement(WebElement element) {
 		try {
-			JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getInstace().getDriver();  // typecast
+			JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getInstance().getDriver();  // typecast
 			js.executeScript("arguments[0].scrollIntoView(true)", element);
 			
 			logger.info("Element is visible on screen");
@@ -59,7 +59,7 @@ public class JavaScriptActions {
 	
 	public void scrollTillEndOfPage() {
 		try {
-			JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getInstace().getDriver();  // typecast
+			JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getInstance().getDriver();  // typecast
 			js.executeScript("window.scrollTO(0, document.body.scrollHeight)");
 			
 			logger.info("Page is scrolled till end");

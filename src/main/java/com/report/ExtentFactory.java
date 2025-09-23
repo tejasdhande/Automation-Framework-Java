@@ -26,11 +26,14 @@ public class ExtentFactory {
 
 	}
 
-	private static ExtentFactory instance = new ExtentFactory();
+	private static ExtentFactory instance;
 
 	// public getter method
 
 	public static ExtentFactory getInstance() {
+		if(instance == null) {
+			 instance = new ExtentFactory();
+		}
 		return instance;
 	}
 
@@ -48,7 +51,7 @@ public class ExtentFactory {
 
 	public static String captureApplicationScreenshot() {
 
-		TakesScreenshot screenshot = (TakesScreenshot) DriverFactory.getInstace().getDriver();// type cast the driver
+		TakesScreenshot screenshot = (TakesScreenshot) DriverFactory.getInstance().getDriver();// type cast the driver
 																								// obj to
 																								// takesscreenshot
 																								// interface
@@ -89,11 +92,14 @@ public class ExtentFactory {
 	}
 
 	public static void passTest(String msg) {
-		getInstance().getExtentTest().log(Status.PASS, MarkupHelper.createLabel(msg, ExtentColor.GREEN));
+		getInstance().getExtentTest().log(Status.PASS, MarkupHelper.createLabel(msg, ExtentColor.GREEN),
+				MediaEntityBuilder.createScreenCaptureFromBase64String(captureApplicationScreenshot()).build());
+
 	}
 
 	public static void failTest(String msg) {
 		getInstance().getExtentTest().fail(msg,
 				MediaEntityBuilder.createScreenCaptureFromBase64String(captureApplicationScreenshot()).build());
 	}
+
 }

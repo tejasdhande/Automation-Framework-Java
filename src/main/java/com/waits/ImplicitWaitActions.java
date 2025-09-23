@@ -14,7 +14,7 @@ public class ImplicitWaitActions {
 
 	public void setImplicitWait() {
 		try {
-			DriverFactory.getInstace().getDriver().manage().timeouts()
+			DriverFactory.getInstance().getDriver().manage().timeouts()
 					.implicitlyWait(Duration.ofSeconds(Constants.IMPLICIT_WAIT_TIME));
 			
 			logger.info("Implicit wait time is set to "+Constants.IMPLICIT_WAIT_TIME);

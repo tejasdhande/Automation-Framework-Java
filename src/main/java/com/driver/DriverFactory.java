@@ -13,7 +13,7 @@ public class DriverFactory {
 	
 	private static DriverFactory instance = new DriverFactory();  // static object used in project
 	
-	public static DriverFactory getInstace() {
+	public static DriverFactory getInstance() {
 		 return instance;
 	}
 	

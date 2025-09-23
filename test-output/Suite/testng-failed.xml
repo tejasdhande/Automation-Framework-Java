@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.test.LoginTest">
+      <class name="com.test.AddUserTest">
         <methods>
-          <include name="loginWithValidUsernameAndValidPassword"/>
           <include name="setUp"/>
+          <include name="checkIfStatusDropdwonisOpened"/>
           <include name="TearDown"/>
         </methods>
-      </class> <!-- com.test.LoginTest -->
+      </class> <!-- com.test.AddUserTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

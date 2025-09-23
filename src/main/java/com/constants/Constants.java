@@ -6,7 +6,7 @@ public abstract class Constants {
 	
 	public static final String EXECUTATION_REPORT_PATH = CURRENT_DIR+"/reports/execution.html";
 	
-	public static final int EXPLICIT_WAIT_TIME = 20;
+	public static final int EXPLICIT_WAIT_TIME = 30;
 	
 	public static final int IMPLICIT_WAIT_TIME = 20;
 	

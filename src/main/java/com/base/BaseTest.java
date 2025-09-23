@@ -16,14 +16,14 @@ public class BaseTest {
 
 		WebDriver driver = BrowserFactory.createBrowserInstance(ConfigLoader.getInstance().getPropertyValue("browser"));
 
-		DriverFactory.getInstace().setDriver(driver);
+		DriverFactory.getInstance().setDriver(driver);
 		
-		DriverFactory.getInstace().getDriver().get(TestDataLoader.getInstance().getAppURL());
+		DriverFactory.getInstance().getDriver().get(TestDataLoader.getInstance().getAppURL());
 
 	}
 	
 	@AfterSuite
 	public void TearDown() {
-		DriverFactory.getInstace().getDriver().quit();
+		DriverFactory.getInstance().getDriver().quit();
 	}
 }
