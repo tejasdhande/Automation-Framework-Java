@@ -1,5 +1,6 @@
 package com.test;
 
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.base.BaseTest;
@@ -7,17 +8,22 @@ import com.pages.AddUserPage;
 
 public class AddUserTest extends BaseTest {
 
-	@Test(dependsOnMethods = {"checkIfAdminPageisOpened"})
-	public void checkIfUserDropdwonisOpened() {
-		AddUserPage ad = new AddUserPage();
+	private AddUserPage addUserPage;
 
-		ad.clickuserRoleDropdown();
+	@BeforeClass
+	public void setUP() {
+		addUserPage = new AddUserPage();
+	}
+
+	@Test
+	public void checkIfUserDropdwonisOpened() {
+
+		addUserPage.clickuserRoleDropdown();
 	}
 
 	@Test
 	public void checkIfStatusDropdwonisOpened() {
-		AddUserPage ad = new AddUserPage();
 
-		ad.clickStatusDropdown();
+		addUserPage.clickStatusDropdown();
 	}
 }
