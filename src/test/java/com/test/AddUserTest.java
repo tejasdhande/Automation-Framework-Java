@@ -1,18 +1,20 @@
 package com.test;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.base.BaseTest;
 import com.pages.AddUserPage;
 
 public class AddUserTest extends BaseTest {
-
+	
 	private AddUserPage addUserPage;
 
-	@BeforeClass
-	public void setUP() {
+	@BeforeMethod
+	public void setUP(){
 		addUserPage = new AddUserPage();
+
 	}
 
 	@Test
