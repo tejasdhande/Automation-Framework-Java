@@ -19,7 +19,7 @@ public class BaseTest {
 		WebDriver driver = BrowserFactory.createBrowserInstance(ConfigLoader.getInstance().getPropertyValue("browser"));
 
 		DriverFactory.getInstance().setDriver(driver);
-		
+		DriverFactory.getInstance().getDriver().manage().window().maximize();
 		DriverFactory.getInstance().getDriver().get(TestDataLoader.getInstance().getAppURL());
 
 	}
