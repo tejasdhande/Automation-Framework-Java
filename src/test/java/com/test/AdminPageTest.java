@@ -15,14 +15,19 @@ public class AdminPageTest extends BaseTest{
 		adminPage = new AdminPage();
 	}
 	
-	@Test
+	@Test (priority = 1)
 	public void checkIfAdminIsSerching() {
 		adminPage.searchTheUsers("Admin");
 	}
 	
-	@Test
+	@Test (priority = 2)
 	public void checkIfResetFunctionalityIsWorking() {
 		adminPage.resetTheUsers();
+	}
+	
+	@Test (priority = 3)
+	public void checkIfAddButtonClicked() {
+		adminPage.clickAddButton();
 	}
 
 }

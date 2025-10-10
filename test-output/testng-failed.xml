@@ -6,36 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.test.HomePageTest">
-        <methods>
-          <include name="checkIfAdminPageisOpened"/>
-          <include name="setUp"/>
-          <include name="TearDown"/>
-        </methods>
-      </class> <!-- com.test.HomePageTest -->
       <class name="com.test.AddUserTest">
         <methods>
+          <include name="setUP"/>
           <include name="setUp"/>
-          <include name="checkIfUserDropdwonisOpened"/>
-          <include name="checkIfStatusDropdwonisOpened"/>
+          <include name="checkIfNewUserAdded"/>
           <include name="TearDown"/>
         </methods>
       </class> <!-- com.test.AddUserTest -->
-      <class name="com.test.LoginTest">
-        <methods>
-          <include name="loginWithValidUsernameAndValidPassword"/>
-          <include name="setUp"/>
-          <include name="TearDown"/>
-        </methods>
-      </class> <!-- com.test.LoginTest -->
-      <class name="com.test.AdminPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="checkIfAdminIsSerching"/>
-          <include name="checkIfResetFunctionalityIsWorking"/>
-          <include name="TearDown"/>
-        </methods>
-      </class> <!-- com.test.AdminPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

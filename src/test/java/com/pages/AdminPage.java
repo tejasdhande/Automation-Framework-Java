@@ -55,5 +55,9 @@ public class AdminPage extends BasePage{
 		}
 	}
 	
+	public void clickAddButton() {
+		super.click(AddButton, "Add Button");
+	}
+	
 	
 }
