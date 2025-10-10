@@ -5,8 +5,8 @@
     <classes>
       <class name="com.test.AddUserTest">
         <methods>
-          <include name="setUp"/>
           <include name="checkIfUserDropdwonisOpened"/>
+          <include name="setUp"/>
           <include name="checkIfStatusDropdwonisOpened"/>
           <include name="TearDown"/>
         </methods>
