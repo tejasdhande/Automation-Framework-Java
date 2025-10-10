@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-23T13:45:02 IST" name="Suite" finished-at="2025-09-23T13:45:08 IST" duration-ms="5674">
+  <suite started-at="2025-10-10T11:52:26 IST" name="Suite" finished-at="2025-10-10T11:52:32 IST" duration-ms="5855">
     <groups>
     </groups>
-    <test started-at="2025-09-23T13:45:02 IST" name="Test" finished-at="2025-09-23T13:45:08 IST" duration-ms="5674">
+    <test started-at="2025-10-10T11:52:26 IST" name="Test" finished-at="2025-10-10T11:52:32 IST" duration-ms="5855">
       <class name="com.test.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.HomePageTest@1199fe66]" started-at="2025-09-23T13:44:58 IST" name="setUp" finished-at="2025-09-23T13:45:02 IST" duration-ms="4337" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.HomePageTest@1199fe66]" started-at="2025-10-10T11:52:21 IST" name="setUp" finished-at="2025-10-10T11:52:26 IST" duration-ms="4583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUP()[pri:0, instance:com.test.HomePageTest@1199fe66]" started-at="2025-09-23T13:45:05 IST" name="setUP" finished-at="2025-09-23T13:45:05 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.test.HomePageTest@1199fe66]" started-at="2025-10-10T11:52:29 IST" name="setUP" finished-at="2025-10-10T11:52:29 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="checkIfAdminPageisOpened()[pri:0, instance:com.test.HomePageTest@1199fe66]" started-at="2025-09-23T13:45:05 IST" name="checkIfAdminPageisOpened" finished-at="2025-09-23T13:45:07 IST" duration-ms="1633" status="PASS">
+        <test-method signature="checkIfAdminPageisOpened()[pri:0, instance:com.test.HomePageTest@1199fe66]" started-at="2025-10-10T11:52:29 IST" name="checkIfAdminPageisOpened" finished-at="2025-10-10T11:52:30 IST" duration-ms="1639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIfAdminPageisOpened -->
       </class> <!-- com.test.HomePageTest -->
       <class name="com.test.AddUserTest">
-        <test-method is-config="true" signature="setUP()[pri:0, instance:com.test.AddUserTest@614df0a4]" started-at="2025-09-23T13:45:07 IST" name="setUP" finished-at="2025-09-23T13:45:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.test.AddUserTest@614df0a4]" started-at="2025-10-10T11:52:31 IST" name="setUP" finished-at="2025-10-10T11:52:31 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="checkIfStatusDropdwonisOpened()[pri:0, instance:com.test.AddUserTest@614df0a4]" started-at="2025-09-23T13:45:07 IST" name="checkIfStatusDropdwonisOpened" finished-at="2025-09-23T13:45:07 IST" duration-ms="800" status="PASS">
+        <test-method signature="checkIfStatusDropdwonisOpened()[pri:0, instance:com.test.AddUserTest@614df0a4]" started-at="2025-10-10T11:52:31 IST" name="checkIfStatusDropdwonisOpened" finished-at="2025-10-10T11:52:31 IST" duration-ms="795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIfStatusDropdwonisOpened -->
-        <test-method signature="checkIfUserDropdwonisOpened()[pri:0, instance:com.test.AddUserTest@614df0a4]" started-at="2025-09-23T13:45:08 IST" name="checkIfUserDropdwonisOpened" finished-at="2025-09-23T13:45:08 IST" duration-ms="229" status="PASS">
+        <test-method signature="checkIfUserDropdwonisOpened()[pri:0, instance:com.test.AddUserTest@614df0a4]" started-at="2025-10-10T11:52:31 IST" name="checkIfUserDropdwonisOpened" finished-at="2025-10-10T11:52:32 IST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIfUserDropdwonisOpened -->
       </class> <!-- com.test.AddUserTest -->
       <class name="com.test.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.LoginTest@7642df8f]" started-at="2025-09-23T13:45:02 IST" name="setUp" finished-at="2025-09-23T13:45:02 IST" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.LoginTest@7642df8f]" started-at="2025-10-10T11:52:26 IST" name="setUp" finished-at="2025-10-10T11:52:26 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithValidUsernameAndValidPassword()[pri:0, instance:com.test.LoginTest@7642df8f]" started-at="2025-09-23T13:45:02 IST" name="loginWithValidUsernameAndValidPassword" finished-at="2025-09-23T13:45:05 IST" duration-ms="2337" status="PASS">
+        <test-method signature="loginWithValidUsernameAndValidPassword()[pri:0, instance:com.test.LoginTest@7642df8f]" started-at="2025-10-10T11:52:26 IST" name="loginWithValidUsernameAndValidPassword" finished-at="2025-10-10T11:52:29 IST" duration-ms="2504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidUsernameAndValidPassword -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.test.LoginTest@7642df8f]" started-at="2025-09-23T13:45:08 IST" name="TearDown" finished-at="2025-09-23T13:45:09 IST" duration-ms="204" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.test.LoginTest@7642df8f]" started-at="2025-10-10T11:52:32 IST" name="TearDown" finished-at="2025-10-10T11:52:32 IST" duration-ms="202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
