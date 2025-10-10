@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.AddUserTest" class="method navigator-link" hash-for-method="checkIfNewUserAdded">checkIfNewUserAdded</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +115,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.AdminPageTest" class="method navigator-link" hash-for-method="checkIfAddButtonClicked">checkIfAddButtonClicked</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.test.AdminPageTest" class="method navigator-link" hash-for-method="checkIfAdminIsSerching">checkIfAdminIsSerching</a> <!-- method navigator-link -->
@@ -114,16 +133,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.test.AdminPageTest" class="method navigator-link" hash-for-method="checkIfResetFunctionalityIsWorking">checkIfResetFunctionalityIsWorking</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.AddUserTest" class="method navigator-link" hash-for-method="checkIfStatusDropdwonisOpened">checkIfStatusDropdwonisOpened</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.AddUserTest" class="method navigator-link" hash-for-method="checkIfUserDropdwonisOpened">checkIfUserDropdwonisOpened</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -143,39 +152,37 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.test.AddUserTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkIfStatusDropdwonisOpened">
-                  </a> <!-- checkIfStatusDropdwonisOpened -->
-                  <span class="method-name">checkIfStatusDropdwonisOpened</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkIfUserDropdwonisOpened">
-                  </a> <!-- checkIfUserDropdwonisOpened -->
-                  <span class="method-name">checkIfUserDropdwonisOpened</span>
+                  <a name="checkIfNewUserAdded">
+                  </a> <!-- checkIfNewUserAdded -->
+                  <span class="method-name">checkIfNewUserAdded</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected URL was: https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers but got: https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser
+	at com.test.AddUserTest.checkIfNewUserAdded(AddUserTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.test.LoginTest</span>
+              <span class="class-name">com.test.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithValidUsernameAndValidPassword">
-                  </a> <!-- loginWithValidUsernameAndValidPassword -->
-                  <span class="method-name">loginWithValidUsernameAndValidPassword</span>
+                  <a name="checkIfAdminPageisOpened">
+                  </a> <!-- checkIfAdminPageisOpened -->
+                  <span class="method-name">checkIfAdminPageisOpened</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,6 +193,13 @@
               <span class="class-name">com.test.AdminPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkIfAddButtonClicked">
+                  </a> <!-- checkIfAddButtonClicked -->
+                  <span class="method-name">checkIfAddButtonClicked</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="checkIfAdminIsSerching">
@@ -205,14 +219,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.test.HomePageTest</span>
+              <span class="class-name">com.test.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkIfAdminPageisOpened">
-                  </a> <!-- checkIfAdminPageisOpened -->
-                  <span class="method-name">checkIfAdminPageisOpened</span>
+                  <a name="loginWithValidUsernameAndValidPassword">
+                  </a> <!-- loginWithValidUsernameAndValidPassword -->
+                  <span class="method-name">loginWithValidUsernameAndValidPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -277,34 +291,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginWithValidUsernameAndValidPassword')
-data.setCell(0, 2, 'com.test.LoginTest')
-data.setCell(0, 3, 2583);
+data.setCell(0, 1, 'checkIfNewUserAdded')
+data.setCell(0, 2, 'com.test.AddUserTest')
+data.setCell(0, 3, 3909);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkIfAdminIsSerching')
-data.setCell(1, 2, 'com.test.AdminPageTest')
-data.setCell(1, 3, 1492);
+data.setCell(1, 1, 'loginWithValidUsernameAndValidPassword')
+data.setCell(1, 2, 'com.test.LoginTest')
+data.setCell(1, 3, 2180);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkIfAdminPageisOpened')
-data.setCell(2, 2, 'com.test.HomePageTest')
-data.setCell(2, 3, 1481);
+data.setCell(2, 1, 'checkIfAdminIsSerching')
+data.setCell(2, 2, 'com.test.AdminPageTest')
+data.setCell(2, 3, 1933);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkIfResetFunctionalityIsWorking')
-data.setCell(3, 2, 'com.test.AdminPageTest')
-data.setCell(3, 3, 403);
+data.setCell(3, 1, 'checkIfAdminPageisOpened')
+data.setCell(3, 2, 'com.test.HomePageTest')
+data.setCell(3, 3, 1673);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'checkIfStatusDropdwonisOpened')
-data.setCell(4, 2, 'com.test.AddUserTest')
-data.setCell(4, 3, 391);
+data.setCell(4, 1, 'checkIfAddButtonClicked')
+data.setCell(4, 2, 'com.test.AdminPageTest')
+data.setCell(4, 3, 751);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkIfUserDropdwonisOpened')
-data.setCell(5, 2, 'com.test.AddUserTest')
-data.setCell(5, 3, 339);
+data.setCell(5, 1, 'checkIfResetFunctionalityIsWorking')
+data.setCell(5, 2, 'com.test.AdminPageTest')
+data.setCell(5, 3, 430);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -323,6 +337,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">com.test.HomePageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">com.test.AddUserTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
@@ -333,13 +354,6 @@ return data;
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.test.AdminPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.test.HomePageTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">TearDown</span>
                 <br/>
@@ -363,63 +377,61 @@ return data;
               <div class="chronological-class-name">com.test.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">6719 ms</span>
+                <span class="method-start">4941 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginWithValidUsernameAndValidPassword</span>
-                <span class="method-start">6794 ms</span>
+                <span class="method-start">5004 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">9609 ms</span>
+                <span class="method-start">7338 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkIfAdminPageisOpened</span>
-                <span class="method-start">9611 ms</span>
+                <span class="method-start">7347 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.AdminPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11335 ms</span>
+                <span class="method-start">9135 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkIfAdminIsSerching</span>
-                <span class="method-start">11337 ms</span>
+                <span class="method-start">9141 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkIfResetFunctionalityIsWorking</span>
-                <span class="method-start">12987 ms</span>
+                <span class="method-start">11224 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkIfAddButtonClicked</span>
+                <span class="method-start">11842 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.AddUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">13566 ms</span>
+                <span class="method-start">12736 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">checkIfStatusDropdwonisOpened</span>
-                <span class="method-start">13570 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUP</span>
-                <span class="method-start">14143 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkIfUserDropdwonisOpened</span>
-                <span class="method-start">14144 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkIfNewUserAdded</span>
+                <span class="method-start">12740 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">15380 ms</span>
+                <span class="method-start">17434 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
