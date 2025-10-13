@@ -1,7 +1,8 @@
 package com.test;
 
+import java.time.Duration;
+
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -21,13 +22,14 @@ public class AddUserTest extends BaseTest {
 	}
 
 	@Test
-	public void checkIfNewUserAdded() {
+	public void checkIfNewUserAdded() throws InterruptedException {
 		
-		addUserPage.addNewUser("tejas", "Tejas@123");
-		
+		addUserPage.addNewUser("t", "Qwert@123", "admin142");
+		Thread.sleep(Duration.ofSeconds(10));
 		  String expectedUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers";
 		    String actualUrl = DriverFactory.getInstance().getDriver().getCurrentUrl();
-
+		    
+		    
 		    if (!actualUrl.equalsIgnoreCase(expectedUrl)) {
 		        ExtentFactory.failTest("Test Failed: not all required fields selected");
 		        Assert.fail("Expected URL was: " + expectedUrl + " but got: " + actualUrl);

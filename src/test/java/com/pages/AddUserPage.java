@@ -39,19 +39,23 @@ public class AddUserPage extends BasePage{
 	@FindBy (xpath = "//button[text()=' Cancel ']")
 	private WebElement CancelButton;
 	
+	@FindBy (xpath = "//div[@role='listbox']/child::div[2]")
+	private WebElement EmployeeNameHint;
+	
 	//Initializing element
 	public AddUserPage() {
 		PageFactory.initElements(DriverFactory.getInstance().getDriver(),this);
 	}
 	
-	public void addNewUser(String empname, String password) {
+	public void addNewUser(String empname, String password, String username) {
 		
 		super.click(userRoleDropdown, "User Role Dropdown");
 		super.click(AdminOptionFromDropdown, "Admin option");
 		super.sendKeys(EmployeeNameTextBox, "Employee name", empname);
+		super.click(EmployeeNameHint, "First Option");
 		super.click(StatusDropdown, "Status Dropdown");
 		super.click(EnabledOptionFromDropdown,"Enable option");
-		super.sendKeys(UsernameTextBox, "User name", "admin1");
+		super.sendKeys(UsernameTextBox, "User name", username);
 		super.sendKeys(PasswordTextBox, "Password", password);
 		super.sendKeys(ConfirmPasswordTextBox, "Confirm Password", password);
 		super.click(SaveButton, "Save button");
