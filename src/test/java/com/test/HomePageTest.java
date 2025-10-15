@@ -21,5 +21,10 @@ public class HomePageTest extends BaseTest {
 		homePage.CheckAdminPage();
 
 	}
+	
+	@Test (dependsOnMethods = "checkIfNewUserAdded")
+	public void checkIfPIMPageIsOpened() {
+		homePage.CheckPIMPage();
+	}
 
 }

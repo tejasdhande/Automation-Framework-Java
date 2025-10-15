@@ -24,7 +24,7 @@ public class AddUserTest extends BaseTest {
 	@Test
 	public void checkIfNewUserAdded() throws InterruptedException {
 		
-		addUserPage.addNewUser("t", "Qwert@123", "admin142");
+		addUserPage.addNewUser("t", "Qwert@123", "admin132");
 		Thread.sleep(Duration.ofSeconds(10));
 		  String expectedUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers";
 		    String actualUrl = DriverFactory.getInstance().getDriver().getCurrentUrl();

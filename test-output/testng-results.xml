@@ -1,63 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-13T18:05:12 IST" name="Suite" finished-at="2025-10-13T18:05:39 IST" duration-ms="26517">
+  <suite started-at="2025-10-15T13:37:23 IST" name="Suite" finished-at="2025-10-15T13:37:52 IST" duration-ms="28558">
     <groups>
     </groups>
-    <test started-at="2025-10-13T18:05:12 IST" name="Test" finished-at="2025-10-13T18:05:39 IST" duration-ms="26517">
+    <test started-at="2025-10-15T13:37:23 IST" name="Test" finished-at="2025-10-15T13:37:52 IST" duration-ms="28558">
       <class name="com.test.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.HomePageTest@cd1d761]" started-at="2025-10-13T18:05:07 IST" name="setUp" finished-at="2025-10-13T18:05:12 IST" duration-ms="5316" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.HomePageTest@758705fa]" started-at="2025-10-15T13:37:18 IST" name="setUp" finished-at="2025-10-15T13:37:23 IST" duration-ms="5023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUP()[pri:0, instance:com.test.HomePageTest@cd1d761]" started-at="2025-10-13T18:05:17 IST" name="setUP" finished-at="2025-10-13T18:05:17 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.test.HomePageTest@758705fa]" started-at="2025-10-15T13:37:26 IST" name="setUP" finished-at="2025-10-15T13:37:26 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="checkIfAdminPageisOpened()[pri:0, instance:com.test.HomePageTest@cd1d761]" started-at="2025-10-13T18:05:17 IST" name="checkIfAdminPageisOpened" finished-at="2025-10-13T18:05:19 IST" duration-ms="1759" status="PASS">
+        <test-method signature="checkIfAdminPageisOpened()[pri:0, instance:com.test.HomePageTest@758705fa]" started-at="2025-10-15T13:37:26 IST" name="checkIfAdminPageisOpened" finished-at="2025-10-15T13:37:28 IST" duration-ms="1810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIfAdminPageisOpened -->
+        <test-method signature="checkIfPIMPageIsOpened()[pri:0, instance:com.test.HomePageTest@758705fa]" started-at="2025-10-15T13:37:47 IST" name="checkIfPIMPageIsOpened" finished-at="2025-10-15T13:37:48 IST" depends-on-methods="checkIfNewUserAdded" duration-ms="1040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIfPIMPageIsOpened -->
       </class> <!-- com.test.HomePageTest -->
       <class name="com.test.AdminPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.AdminPageTest@68be8808]" started-at="2025-10-13T18:05:19 IST" name="setUp" finished-at="2025-10-13T18:05:19 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.AdminPageTest@ebaa6cb]" started-at="2025-10-15T13:37:28 IST" name="setUp" finished-at="2025-10-15T13:37:28 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkIfAdminIsSerching()[pri:1, instance:com.test.AdminPageTest@68be8808]" started-at="2025-10-13T18:05:19 IST" name="checkIfAdminIsSerching" finished-at="2025-10-13T18:05:21 IST" duration-ms="2026" status="PASS">
+        <test-method signature="checkIfAdminIsSerching()[pri:1, instance:com.test.AdminPageTest@ebaa6cb]" started-at="2025-10-15T13:37:28 IST" name="checkIfAdminIsSerching" finished-at="2025-10-15T13:37:30 IST" duration-ms="1939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIfAdminIsSerching -->
-        <test-method signature="checkIfResetFunctionalityIsWorking()[pri:2, instance:com.test.AdminPageTest@68be8808]" started-at="2025-10-13T18:05:22 IST" name="checkIfResetFunctionalityIsWorking" finished-at="2025-10-13T18:05:22 IST" duration-ms="392" status="PASS">
+        <test-method signature="checkIfResetFunctionalityIsWorking()[pri:2, instance:com.test.AdminPageTest@ebaa6cb]" started-at="2025-10-15T13:37:30 IST" name="checkIfResetFunctionalityIsWorking" finished-at="2025-10-15T13:37:31 IST" duration-ms="409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIfResetFunctionalityIsWorking -->
-        <test-method signature="checkIfAddButtonClicked()[pri:3, instance:com.test.AdminPageTest@68be8808]" started-at="2025-10-13T18:05:22 IST" name="checkIfAddButtonClicked" finished-at="2025-10-13T18:05:23 IST" duration-ms="841" status="PASS">
+        <test-method signature="checkIfAddButtonClicked()[pri:3, instance:com.test.AdminPageTest@ebaa6cb]" started-at="2025-10-15T13:37:31 IST" name="checkIfAddButtonClicked" finished-at="2025-10-15T13:37:32 IST" duration-ms="716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIfAddButtonClicked -->
       </class> <!-- com.test.AdminPageTest -->
+      <class name="com.test.PIMPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.PIMPageTest@49d3c823]" started-at="2025-10-15T13:37:48 IST" name="setUp" finished-at="2025-10-15T13:37:48 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployee()[pri:0, instance:com.test.PIMPageTest@49d3c823]" started-at="2025-10-15T13:37:48 IST" name="addEmployee" finished-at="2025-10-15T13:37:52 IST" duration-ms="3662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee -->
+      </class> <!-- com.test.PIMPageTest -->
       <class name="com.test.AddUserTest">
-        <test-method is-config="true" signature="setUP()[pri:0, instance:com.test.AddUserTest@32193bea]" started-at="2025-10-13T18:05:23 IST" name="setUP" finished-at="2025-10-13T18:05:23 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.test.AddUserTest@906d29b]" started-at="2025-10-15T13:37:32 IST" name="setUP" finished-at="2025-10-15T13:37:32 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="checkIfNewUserAdded()[pri:0, instance:com.test.AddUserTest@32193bea]" started-at="2025-10-13T18:05:23 IST" name="checkIfNewUserAdded" finished-at="2025-10-13T18:05:39 IST" duration-ms="15538" status="PASS">
+        <test-method signature="checkIfNewUserAdded()[pri:0, instance:com.test.AddUserTest@906d29b]" started-at="2025-10-15T13:37:32 IST" name="checkIfNewUserAdded" finished-at="2025-10-15T13:37:47 IST" duration-ms="15260" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected URL was: https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers but got: https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected URL was: https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers but got: https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser
+at org.testng.Assert.fail(Assert.java:111)
+at com.test.AddUserTest.checkIfNewUserAdded(AddUserTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIfNewUserAdded -->
       </class> <!-- com.test.AddUserTest -->
       <class name="com.test.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.LoginTest@614df0a4]" started-at="2025-10-13T18:05:13 IST" name="setUp" finished-at="2025-10-13T18:05:13 IST" duration-ms="65" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.LoginTest@73a2e526]" started-at="2025-10-15T13:37:24 IST" name="setUp" finished-at="2025-10-15T13:37:24 IST" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithValidUsernameAndValidPassword()[pri:0, instance:com.test.LoginTest@614df0a4]" started-at="2025-10-13T18:05:13 IST" name="loginWithValidUsernameAndValidPassword" finished-at="2025-10-13T18:05:17 IST" duration-ms="4441" status="PASS">
+        <test-method signature="loginWithValidUsernameAndValidPassword()[pri:0, instance:com.test.LoginTest@73a2e526]" started-at="2025-10-15T13:37:24 IST" name="loginWithValidUsernameAndValidPassword" finished-at="2025-10-15T13:37:26 IST" duration-ms="2211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidUsernameAndValidPassword -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.test.LoginTest@614df0a4]" started-at="2025-10-13T18:05:40 IST" name="TearDown" finished-at="2025-10-13T18:05:40 IST" duration-ms="297" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.test.LoginTest@73a2e526]" started-at="2025-10-15T13:37:53 IST" name="TearDown" finished-at="2025-10-15T13:37:53 IST" duration-ms="268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

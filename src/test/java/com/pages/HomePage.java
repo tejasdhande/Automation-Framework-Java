@@ -42,5 +42,9 @@ public class HomePage extends BasePage {
 
 		super.click(LeavePage, "Leave page");
 	}
+	
+	public void CheckPIMPage() {
+		super.click(PIMPage, "PIM page");
+	}
 
 }
