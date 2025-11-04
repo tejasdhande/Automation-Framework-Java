@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -122,6 +122,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.LeavePageTest" class="method navigator-link" hash-for-method="applyLeavebySelectingValidInput">applyLeavebySelectingValidInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.test.AdminPageTest" class="method navigator-link" hash-for-method="checkIfAddButtonClicked">checkIfAddButtonClicked</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -133,6 +138,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.test.HomePageTest" class="method navigator-link" hash-for-method="checkIfAdminPageisOpened">checkIfAdminPageisOpened</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTest" class="method navigator-link" hash-for-method="checkIfLeavePageisOpened">checkIfLeavePageisOpened</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -197,6 +207,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="checkIfLeavePageisOpened">
+                  </a> <!-- checkIfLeavePageisOpened -->
+                  <span class="method-name">checkIfLeavePageisOpened</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="checkIfPIMPageIsOpened">
                   </a> <!-- checkIfPIMPageIsOpened -->
                   <span class="method-name">checkIfPIMPageIsOpened</span>
@@ -215,6 +232,21 @@
                   <a name="addEmployee">
                   </a> <!-- addEmployee -->
                   <span class="method-name">addEmployee</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.LeavePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="applyLeavebySelectingValidInput">
+                  </a> <!-- applyLeavebySelectingValidInput -->
+                  <span class="method-name">applyLeavebySelectingValidInput</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -283,6 +315,7 @@
       &lt;class name=&quot;com.test.AdminPageTest&quot;/&gt;
       &lt;class name=&quot;com.test.AddUserTest&quot;/&gt;
       &lt;class name=&quot;com.test.PIMPageTest&quot;/&gt;
+      &lt;class name=&quot;com.test.LeavePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -296,7 +329,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (5 classes)</span>
+                <span class="test-name">Test (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -322,44 +355,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkIfNewUserAdded')
 data.setCell(0, 2, 'com.test.AddUserTest')
-data.setCell(0, 3, 15260);
+data.setCell(0, 3, 15332);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addEmployee')
-data.setCell(1, 2, 'com.test.PIMPageTest')
-data.setCell(1, 3, 3662);
+data.setCell(1, 1, 'applyLeavebySelectingValidInput')
+data.setCell(1, 2, 'com.test.LeavePageTest')
+data.setCell(1, 3, 6494);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginWithValidUsernameAndValidPassword')
-data.setCell(2, 2, 'com.test.LoginTest')
-data.setCell(2, 3, 2211);
+data.setCell(2, 1, 'addEmployee')
+data.setCell(2, 2, 'com.test.PIMPageTest')
+data.setCell(2, 3, 3875);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkIfAdminIsSerching')
-data.setCell(3, 2, 'com.test.AdminPageTest')
-data.setCell(3, 3, 1939);
+data.setCell(3, 1, 'loginWithValidUsernameAndValidPassword')
+data.setCell(3, 2, 'com.test.LoginTest')
+data.setCell(3, 3, 2315);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'checkIfAdminPageisOpened')
-data.setCell(4, 2, 'com.test.HomePageTest')
-data.setCell(4, 3, 1810);
+data.setCell(4, 1, 'checkIfAdminIsSerching')
+data.setCell(4, 2, 'com.test.AdminPageTest')
+data.setCell(4, 3, 1651);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkIfPIMPageIsOpened')
+data.setCell(5, 1, 'checkIfAdminPageisOpened')
 data.setCell(5, 2, 'com.test.HomePageTest')
-data.setCell(5, 3, 1040);
+data.setCell(5, 3, 1399);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'checkIfAddButtonClicked')
-data.setCell(6, 2, 'com.test.AdminPageTest')
-data.setCell(6, 3, 716);
+data.setCell(6, 1, 'checkIfPIMPageIsOpened')
+data.setCell(6, 2, 'com.test.HomePageTest')
+data.setCell(6, 3, 1094);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'checkIfResetFunctionalityIsWorking')
-data.setCell(7, 2, 'com.test.AdminPageTest')
-data.setCell(7, 3, 409);
+data.setCell(7, 1, 'checkIfLeavePageisOpened')
+data.setCell(7, 2, 'com.test.HomePageTest')
+data.setCell(7, 3, 1064);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'checkIfAddButtonClicked')
+data.setCell(8, 2, 'com.test.AdminPageTest')
+data.setCell(8, 3, 707);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkIfResetFunctionalityIsWorking')
+data.setCell(9, 2, 'com.test.AdminPageTest')
+data.setCell(9, 3, 354);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -374,7 +415,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -392,11 +433,18 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.test.AddUserTest</span>
+              <span class="ignored-class-name">com.test.LeavePageTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">TearDown</span>
                 <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.test.AddUserTest</span>
+              <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">TearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -425,79 +473,97 @@ return data;
               <div class="chronological-class-name">com.test.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">5479 ms</span>
+                <span class="method-start">4849 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginWithValidUsernameAndValidPassword</span>
-                <span class="method-start">5527 ms</span>
+                <span class="method-start">4919 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">7861 ms</span>
+                <span class="method-start">7369 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkIfAdminPageisOpened</span>
-                <span class="method-start">7871 ms</span>
+                <span class="method-start">7369 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.AdminPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">9801 ms</span>
+                <span class="method-start">8891 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkIfAdminIsSerching</span>
-                <span class="method-start">9805 ms</span>
+                <span class="method-start">8895 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkIfResetFunctionalityIsWorking</span>
-                <span class="method-start">11912 ms</span>
+                <span class="method-start">10730 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkIfAddButtonClicked</span>
-                <span class="method-start">12495 ms</span>
+                <span class="method-start">11311 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.AddUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">13323 ms</span>
+                <span class="method-start">12151 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkIfNewUserAdded</span>
-                <span class="method-start">13331 ms</span>
+                <span class="method-start">12152 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkIfPIMPageIsOpened</span>
-                <span class="method-start">28600 ms</span>
+                <span class="method-start">27491 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.PIMPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">29774 ms</span>
+                <span class="method-start">28704 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">addEmployee</span>
-                <span class="method-start">29779 ms</span>
+                <span class="method-start">28709 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkIfLeavePageisOpened</span>
+                <span class="method-start">32753 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.LeavePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">33937 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">applyLeavebySelectingValidInput</span>
+                <span class="method-start">33942 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">34501 ms</span>
+                <span class="method-start">41513 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

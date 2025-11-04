@@ -65,4 +65,10 @@ public class BasePage {
 		}
 
 	}
+	
+	public boolean elementDisplay(WebElement element, String elementName) {
+		
+		explicitWaitActions.waitForElementToBePresent(element, elementName);
+		return element.isDisplayed();
+	}
 }

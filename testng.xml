@@ -12,6 +12,7 @@
 			<class name="com.test.AdminPageTest"></class>
 			<class name="com.test.AddUserTest"></class>
 			<class name="com.test.PIMPageTest"></class>
+			<class name="com.test.LeavePageTest"></class>
 		</classes>
 	</test> <!--
 	Test -->

@@ -26,5 +26,10 @@ public class HomePageTest extends BaseTest {
 	public void checkIfPIMPageIsOpened() {
 		homePage.CheckPIMPage();
 	}
+	
+	@Test(dependsOnMethods = "addEmployee")
+	public void checkIfLeavePageisOpened() {
+		homePage.CheckLeavePage();
+	}
 
 }
