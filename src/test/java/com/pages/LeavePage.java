@@ -51,7 +51,7 @@ public class LeavePage extends BasePage {
 	
 	}
 	
-	public void selectTheStartDate() {
+	public void applyforLeave() {
 		
 		super.click(fromDateDropdown, "from date drodown");
 		super.click(startDate, "Start Date");

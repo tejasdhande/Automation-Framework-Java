@@ -17,7 +17,7 @@ public class LeavePageTest extends BaseTest {
 	
 	@Test
 	public void applyLeavebySelectingValidInput() {
-		leavePage.selectTheStartDate();
+		leavePage.applyforLeave();
 	}
 	
 
