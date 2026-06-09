@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2026-05-15T19:54:41 IST" name="Suite" finished-at="2026-05-15T19:55:14 IST" duration-ms="33144">
     <groups>
     </groups>
@@ -24,11 +25,36 @@
           </reporter-output>
         </test-method> <!-- checkIfPIMPageIsOpened -->
         <test-method signature="checkIfLeavePageisOpened()[pri:0, instance:com.test.HomePageTest@49d3c823]" started-at="2026-05-15T19:55:07 IST" name="checkIfLeavePageisOpened" finished-at="2026-05-15T19:55:08 IST" depends-on-methods="addEmployee" duration-ms="964" status="PASS">
+=======
+  <suite started-at="2026-05-17T18:50:39 IST" name="Suite" finished-at="2026-05-17T18:51:34 IST" duration-ms="54585">
+    <groups>
+    </groups>
+    <test started-at="2026-05-17T18:50:39 IST" name="Test" finished-at="2026-05-17T18:51:34 IST" duration-ms="54585">
+      <class name="com.test.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.HomePageTest@49d3c823]" started-at="2026-05-17T18:49:26 IST" name="setUp" finished-at="2026-05-17T18:50:39 IST" duration-ms="72558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.test.HomePageTest@49d3c823]" started-at="2026-05-17T18:50:48 IST" name="setUP" finished-at="2026-05-17T18:50:48 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="checkIfAdminPageisOpened()[pri:0, instance:com.test.HomePageTest@49d3c823]" started-at="2026-05-17T18:50:48 IST" name="checkIfAdminPageisOpened" finished-at="2026-05-17T18:51:00 IST" duration-ms="12146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIfAdminPageisOpened -->
+        <test-method signature="checkIfPIMPageIsOpened()[pri:0, instance:com.test.HomePageTest@49d3c823]" started-at="2026-05-17T18:51:21 IST" name="checkIfPIMPageIsOpened" finished-at="2026-05-17T18:51:22 IST" depends-on-methods="checkIfNewUserAdded" duration-ms="990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIfPIMPageIsOpened -->
+        <test-method signature="checkIfLeavePageisOpened()[pri:0, instance:com.test.HomePageTest@49d3c823]" started-at="2026-05-17T18:51:26 IST" name="checkIfLeavePageisOpened" finished-at="2026-05-17T18:51:27 IST" depends-on-methods="addEmployee" duration-ms="1042" status="PASS">
+>>>>>>> 2b8667ac422e26aba32496ad25540577ad5723a3
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIfLeavePageisOpened -->
       </class> <!-- com.test.HomePageTest -->
       <class name="com.test.AdminPageTest">
+<<<<<<< HEAD
         <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.AdminPageTest@436bc36]" started-at="2026-05-15T19:54:45 IST" name="setUp" finished-at="2026-05-15T19:54:45 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -42,41 +68,81 @@
           </reporter-output>
         </test-method> <!-- checkIfResetFunctionalityIsWorking -->
         <test-method signature="checkIfAddButtonClicked()[pri:3, instance:com.test.AdminPageTest@436bc36]" started-at="2026-05-15T19:54:48 IST" name="checkIfAddButtonClicked" finished-at="2026-05-15T19:54:48 IST" duration-ms="644" status="PASS">
+=======
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.AdminPageTest@436bc36]" started-at="2026-05-17T18:51:00 IST" name="setUp" finished-at="2026-05-17T18:51:00 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkIfAdminIsSerching()[pri:1, instance:com.test.AdminPageTest@436bc36]" started-at="2026-05-17T18:51:00 IST" name="checkIfAdminIsSerching" finished-at="2026-05-17T18:51:04 IST" duration-ms="4245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIfAdminIsSerching -->
+        <test-method signature="checkIfResetFunctionalityIsWorking()[pri:2, instance:com.test.AdminPageTest@436bc36]" started-at="2026-05-17T18:51:04 IST" name="checkIfResetFunctionalityIsWorking" finished-at="2026-05-17T18:51:05 IST" duration-ms="416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIfResetFunctionalityIsWorking -->
+        <test-method signature="checkIfAddButtonClicked()[pri:3, instance:com.test.AdminPageTest@436bc36]" started-at="2026-05-17T18:51:05 IST" name="checkIfAddButtonClicked" finished-at="2026-05-17T18:51:06 IST" duration-ms="682" status="PASS">
+>>>>>>> 2b8667ac422e26aba32496ad25540577ad5723a3
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIfAddButtonClicked -->
       </class> <!-- com.test.AdminPageTest -->
       <class name="com.test.PIMPageTest">
+<<<<<<< HEAD
         <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.PIMPageTest@604c5de8]" started-at="2026-05-15T19:55:04 IST" name="setUp" finished-at="2026-05-15T19:55:04 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
         <test-method signature="addEmployee()[pri:0, instance:com.test.PIMPageTest@604c5de8]" started-at="2026-05-15T19:55:04 IST" name="addEmployee" finished-at="2026-05-15T19:55:07 IST" duration-ms="2706" status="PASS">
+=======
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.PIMPageTest@604c5de8]" started-at="2026-05-17T18:51:22 IST" name="setUp" finished-at="2026-05-17T18:51:22 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployee()[pri:0, instance:com.test.PIMPageTest@604c5de8]" started-at="2026-05-17T18:51:22 IST" name="addEmployee" finished-at="2026-05-17T18:51:26 IST" duration-ms="3627" status="PASS">
+>>>>>>> 2b8667ac422e26aba32496ad25540577ad5723a3
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployee -->
       </class> <!-- com.test.PIMPageTest -->
       <class name="com.test.LeavePageTest">
+<<<<<<< HEAD
         <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.LeavePageTest@37091312]" started-at="2026-05-15T19:55:08 IST" name="setUp" finished-at="2026-05-15T19:55:08 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
         <test-method signature="applyLeavebySelectingValidInput()[pri:0, instance:com.test.LeavePageTest@37091312]" started-at="2026-05-15T19:55:08 IST" name="applyLeavebySelectingValidInput" finished-at="2026-05-15T19:55:14 IST" duration-ms="5645" status="PASS">
+=======
+        <test-method signature="applyLeavebySelectingValidInput()[pri:0, instance:com.test.LeavePageTest@37091312]" started-at="2026-05-17T18:51:27 IST" name="applyLeavebySelectingValidInput" finished-at="2026-05-17T18:51:33 IST" duration-ms="6447" status="PASS">
+>>>>>>> 2b8667ac422e26aba32496ad25540577ad5723a3
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applyLeavebySelectingValidInput -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.LeavePageTest@37091312]" started-at="2026-05-17T18:51:27 IST" name="setUp" finished-at="2026-05-17T18:51:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
       </class> <!-- com.test.LeavePageTest -->
       <class name="com.test.AddUserTest">
+<<<<<<< HEAD
         <test-method is-config="true" signature="setUP()[pri:0, instance:com.test.AddUserTest@5fe1ce85]" started-at="2026-05-15T19:54:48 IST" name="setUP" finished-at="2026-05-15T19:54:48 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
         <test-method signature="checkIfNewUserAdded()[pri:0, instance:com.test.AddUserTest@5fe1ce85]" started-at="2026-05-15T19:54:48 IST" name="checkIfNewUserAdded" finished-at="2026-05-15T19:55:03 IST" duration-ms="14678" status="PASS">
+=======
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.test.AddUserTest@5fe1ce85]" started-at="2026-05-17T18:51:06 IST" name="setUP" finished-at="2026-05-17T18:51:06 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="checkIfNewUserAdded()[pri:0, instance:com.test.AddUserTest@5fe1ce85]" started-at="2026-05-17T18:51:06 IST" name="checkIfNewUserAdded" finished-at="2026-05-17T18:51:21 IST" duration-ms="14718" status="PASS">
+>>>>>>> 2b8667ac422e26aba32496ad25540577ad5723a3
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIfNewUserAdded -->
       </class> <!-- com.test.AddUserTest -->
       <class name="com.test.LoginTest">
+<<<<<<< HEAD
         <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.LoginTest@cd1d761]" started-at="2026-05-15T19:54:41 IST" name="setUp" finished-at="2026-05-15T19:54:42 IST" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -86,6 +152,17 @@
           </reporter-output>
         </test-method> <!-- loginWithValidUsernameAndValidPassword -->
         <test-method is-config="true" signature="TearDown()[pri:0, instance:com.test.LoginTest@cd1d761]" started-at="2026-05-15T19:55:15 IST" name="TearDown" finished-at="2026-05-15T19:55:15 IST" duration-ms="252" status="PASS">
+=======
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.LoginTest@cd1d761]" started-at="2026-05-17T18:50:39 IST" name="setUp" finished-at="2026-05-17T18:50:39 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithValidUsernameAndValidPassword()[pri:0, instance:com.test.LoginTest@cd1d761]" started-at="2026-05-17T18:50:39 IST" name="loginWithValidUsernameAndValidPassword" finished-at="2026-05-17T18:50:47 IST" duration-ms="8122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.test.LoginTest@cd1d761]" started-at="2026-05-17T18:51:34 IST" name="TearDown" finished-at="2026-05-17T18:51:35 IST" duration-ms="334" status="PASS">
+>>>>>>> 2b8667ac422e26aba32496ad25540577ad5723a3
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
